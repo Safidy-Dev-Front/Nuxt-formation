@@ -33,7 +33,8 @@
                     <div class="hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">
                         <NuxtLink class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" to="/">Home</NuxtLink>
-                        <NuxtLink class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" to="/products">Prod</NuxtLink>
+                        <NuxtLink class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" to="/products">Products</NuxtLink>
+                        <NuxtLink class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" to="/projects">Projects</NuxtLink>
                     </div>
                     </div>
                 </div>
@@ -44,7 +45,7 @@
             <div class="sm:hidden" id="mobile-menu">
                 <div class="space-y-1 px-2 pb-3 pt-2">
                     <NuxtLink class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" to="/">Home</NuxtLink>
-                    <NuxtLink class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" to="/products">Prod</NuxtLink>
+                    <NuxtLink class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" to="/products">Product</NuxtLink>
                 </div>
             </div>
         </nav>

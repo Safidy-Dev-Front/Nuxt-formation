@@ -1,11 +1,15 @@
 <template>
     <div>
-        <h1>Salut les gens</h1>
-        <h1>Hello world</h1>
-    <div v-for="item in reactive_array">
-      {{item.name}}
-    </div>
-    <button @click="increment">Increment {{ count }}</button>
+        <div class="hero pt-[200px] pb-[200px]">
+            <h1 class="text-center text-[50px] font-black">Salut les gens</h1>
+        </div>
+        <div class="container mx-auto max-w-7xl">
+            <div v-for="item in reactive_array">
+              {{item.name}}
+            </div>
+
+            <button @click="increment">Increment {{ count }}</button>
+        </div>
     </div>
 </template>
 <script setup>
