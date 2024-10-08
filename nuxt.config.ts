@@ -10,5 +10,12 @@ export default defineNuxtConfig({
     transpile: ['vue-toastification'] // Ex. pour transpiler un package spécifique
   },
   compatibilityDate: '2024-04-03',
-  devtools: { enabled: true }, 
+  devtools: { enabled: true },
+  css: ['~/assets/scss/main.scss'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  }, 
 })
