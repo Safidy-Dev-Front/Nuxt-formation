@@ -20,7 +20,10 @@ export default defineNuxtConfig({
       default: {
         tokenName:'github-token',
         httpEndpoint: 'https://api.github.com/graphql'
-      }
+      },
+      secondClient:{
+        httpEndpoint: 'https://countries.trevorblades.com/'
+      },
     },
   },
   css: ['~/assets/scss/main.scss'],

@@ -9,10 +9,10 @@
         <div class="content-page">
             <div class="container mx-auto max-w-7xl">
                 <div class="wrapper-list">
-                    <ul>
-                        <li v-for="product in products" :key="product.id">
+                    <ul class="flex flex-wrap  mx-[-10px]">
+                        <li class="w-[33.33%] p-[10px]" v-for="product in products" :key="product.id">
                             <div class="item-list">
-                                <img :src="product.image" :alt="product.title" />
+                                <img class="aspect-[4/4] h-[350px] object-contain" :src="product.image" :alt="product.title" />
                                 <p>{{product.title}}</p>
                                 <NuxtLink :to="{ name: 'products-id', params: { id: product.id } }">Read more</NuxtLink>
                             </div>

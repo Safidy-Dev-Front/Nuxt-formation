@@ -16,7 +16,7 @@ import { onMounted } from 'vue';
         }
     }
  `
- const {data} = await useAsyncQuery(query);
+ const {data} =  useAsyncQuery(query);
  onMounted(()=>{
     console.log('list project=>',data);
  })
@@ -27,6 +27,14 @@ import { onMounted } from 'vue';
             <div class="head py-[100px] text-center">
                 <h2 class="text-[30px] font-bold ">Project</h2>
                 <p>Liste de mes projects:</p>
+            </div>
+            <div class="liste-project flex flex-wrap mx-[-10px]">
+                <div v-for="item in data?.viewer.repositories.nodes" class="item w-[50%] py-[20px] my-[20px] px-[10px]">
+                    <div class="content">
+                        <p class="name">{{ item.name }}</p>
+                        <p class="description">{{ item.description }}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
