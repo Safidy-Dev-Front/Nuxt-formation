@@ -22,9 +22,20 @@
 <template>
     <div>
         <div class="head-page">
-        <div class="container mx-auto max-w-7xl">
-            Liste des Continents du planete Terre:
+            <div class="container">
+                <div class="container mx-auto max-w-7xl">
+                    Liste des Continents du planete Terre:
+                </div>
+            </div>
         </div>
+        <div class="container mx-auto max-w-7xl">
+            <div class="list-countries">
+                <ul>
+                    <li v-for="(item , index) in data.countries" :key="index">
+                        <p>{{ item.name }} {{ item.emoji }}</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
